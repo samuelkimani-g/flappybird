@@ -29,7 +29,7 @@ class Game:
             self.scale_y = 1
             self.ui_scale = 1
         
-        pygame.display.set_caption('Flappy Bird Pro')
+        pygame.display.set_caption('Air Rush')
         self.clock = pygame.time.Clock()
         
         # Game states
@@ -507,8 +507,8 @@ class Game:
             pygame.draw.line(game_surface, (r, g, b), (0, y), (int(WINDOW_WIDTH * self.ui_scale), y))
         
         # Game title with shadow
-        title_shadow = self.fonts['large'].render("FLAPPY BIRD PRO", True, (50, 50, 50))
-        title = self.fonts['large'].render("FLAPPY BIRD PRO", True, (255, 255, 255))
+        title_shadow = self.fonts['large'].render("Air Rush", True, (50, 50, 50))
+        title = self.fonts['large'].render("Air Rush", True, (255, 255, 255))
         
         title_rect = title.get_rect(center=(int(WINDOW_WIDTH * self.ui_scale // 2), int(150 * self.ui_scale)))
         shadow_rect = title_shadow.get_rect(center=(int(WINDOW_WIDTH * self.ui_scale // 2 + 3 * self.ui_scale), int(153 * self.ui_scale)))
@@ -530,8 +530,8 @@ class Game:
             button.draw(self.display_surface)
         
         # Version and credits
-        version_text = self.fonts['tiny'].render("Version 2.0 Pro - Fullscreen", True, (80, 80, 80))
-        credit_text = self.fonts['tiny'].render("Enhanced Edition", True, (80, 80, 80))
+        version_text = self.fonts['tiny'].render("GAME OF THE YEAR", True, (80, 80, 80))
+        credit_text = self.fonts['tiny'].render("Made By Sam", True, (80, 80, 80))
         
         version_pos = self.scale_pos(10, WINDOW_HEIGHT - 40)
         credit_pos = self.scale_pos(10, WINDOW_HEIGHT - 20)

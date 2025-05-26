@@ -1,6 +1,6 @@
 # Game window settings
-WINDOW_WIDTH = 480
-WINDOW_HEIGHT = 800
+WINDOW_WIDTH = 1200
+WINDOW_HEIGHT = 718.11
 FRAMERATE = 120
 FULLSCREEN = False # Set to True for fullscreen, False for windowed
 
